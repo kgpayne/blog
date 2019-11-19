@@ -10,6 +10,12 @@ env:
 install:
 - pip install pipenv
 - pipenv install --system --deploy
+- apt-get update
+- apt-get install libjpeg-progs
+- apt-get install gifsicle
+- apt-get install optipng
+- npm install -g svgo
+
 script:
 - "echo Deploying \U0001F680"
 after_success:
