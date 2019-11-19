@@ -71,8 +71,8 @@ FIRST_NAME = 'Ken'
 MENUITEMS = [
     ('home', '/'),
     ('blog', '/blog_index'),
-    ('about', '/pages/about'),
-    ('tags', '/tags')
+    ('about', '/pages/about.html'),
+    ('tags', '/tags.html')
 ]
 ## Social icons for footer
 ## Set these to whatever your unique public URL is for that platform
