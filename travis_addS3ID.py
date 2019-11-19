@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 import os
 
-with open(".s3cfg", "ab") as myfile:
+with open(".s3cfg", "w") as myfile:
     myfile.write("\n")
     myfile.write("access_key = {0}".format(os.environ['AWS_ACCESS_KEY_ID']))
     myfile.write("\n")
