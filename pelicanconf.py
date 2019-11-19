@@ -97,7 +97,13 @@ MENUITEMS = [
 
 # PLUGINS
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['sitemap', 'category_order', 'w3c_validate', 'optimize_images', 'gzip_cache']
+PLUGINS = [
+    'sitemap',
+    'category_order',
+    # 'w3c_validate',
+    'optimize_images',
+    'gzip_cache'
+]
 
 ## SITEMAP PLUGIN
 SITEMAP = {

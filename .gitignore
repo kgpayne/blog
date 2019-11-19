@@ -106,6 +106,8 @@ venv.bak/
 
 # Pelican
 output/
+test_travis_deploy.sh
+.s3cfg
 
 # Mac
 .DS_Store

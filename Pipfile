@@ -7,6 +7,8 @@ verify_ssl = true
 
 [packages]
 pelican = {extras = ["markdown"],version = "*"}
+s3cmd = "*"
+py_w3c = "*"
 
 [requires]
 python_version = "3.6"

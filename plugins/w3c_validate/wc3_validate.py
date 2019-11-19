@@ -7,7 +7,6 @@ W3C HTML Validator plugin for genrated content.
 from pelican import signals
 import logging
 import os
-import pprint
 
 LOG = logging.getLogger(__name__)
 
@@ -31,8 +30,10 @@ def validate(filename):
     Use W3C validator service: https://bitbucket.org/nmb10/py_w3c/ .
     :param filename: the filename to validate
     """
-    # Python3 html parser is in different spot
-    from html.parser import HTMLParser
+    try:
+        from html.parser import HTMLParser
+    except ImportError:  # fallback for Python 2:
+        from HTMLParser import HTMLParser
     from py_w3c.validators.html.validator import HTMLValidator
 
     h = HTMLParser()  # for unescaping WC3 messages
@@ -42,26 +43,19 @@ def validate(filename):
 
     # call w3c webservice
     vld.validate_file(filename)
-    
+
     # display errors and warning
     for err in vld.errors:
-        pprint.pprint(err)
-        if "lastLine" in err.keys():
-            LOG.error("line: {0}; col: {1}; message: {2}".
-                    format(err['lastLine'], err['lastColumn'], h.unescape(err['message']))
-                    )
-        else:
-            LOG.error("message: {0}".
-                    format(h.unescape(err['message']))
-                    )
+        line = err.get('line') or err['lastLine']
+        col = err.get('col') or '{}-{}'.format(err['firstColumn'], err['lastColumn'])
+        LOG.error(u'line: {0}; col: {1}; message: {2}'.
+                  format(line, col, h.unescape(err['message']))
+                  )
     for err in vld.warnings:
-        if "lastLine" in err.keys():
-            LOG.error("line: {0}; col: {1}; message: {2}".
-                    format(err['lastLine'], err['lastColumn'], h.unescape(err['message']))
-                    )
-        else:
-            LOG.error("message: {0}".
-                    format(h.unescape(err['message']))
+        line = err.get('line') or err['lastLine']
+        col = err.get('col') or '{}-{}'.format(err['firstColumn'], err['lastColumn'])
+        LOG.warning(u'line: {0}; col: {1}; message: {2}'.
+                    format(line, col, h.unescape(err['message']))
                     )
 
 
