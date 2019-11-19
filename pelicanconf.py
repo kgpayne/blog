@@ -50,11 +50,11 @@ THEME = 'themes/brutalist'
 INDEX_SAVE_AS = 'blog_index.html'
 DISPLAY_PAGES_ON_MENU = False
 ## used for OG tags and Twitter Card data on index page
-SITEIMAGE = 'site-cover.jpg'
+SITEIMAGE = 'kp_portrait.jpg'
 ## used for OG tags and Twitter Card data of index page
 SITEDESCRIPTION = 'A simple, accessible, content-first Pelican theme inspired by David Bryant Copeland\'s https://brutalist-web.design/'
 ## path to favicon
-FAVICON = 'pelly.png'
+# FAVICON = ''
 ## path to logo for nav menu (optional)
 LOGO = 'kp_portrait.jpg'
 ## first name for nav menu if logo isn't provided
