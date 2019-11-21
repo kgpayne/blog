@@ -2,7 +2,7 @@ deployprod() {
   make html
   s3cmd sync output/ s3://blog.kenpayne.co.uk -c .s3cfg --acl-public --delete-removed
   s3cmd --recursive modify --add-header='content-type':'text/css' \
-      --exclude '' --include '.css' s3://blog.kenpayne.co.uk
+      --exclude '' --include '.css' s3://blog.kenpayne.co.uk -c .s3cfg
 }
 
 if [[ $TRAVIS_PULL_REQUEST != 'false' ]]; then
