@@ -109,6 +109,7 @@ MARKDOWN = {
 # PLUGINS
 PLUGIN_PATHS = ['plugins']
 PLUGINS = [
+    'assets',
     'sitemap',
     'category_order',
     # 'w3c_validate',

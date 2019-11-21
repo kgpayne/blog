@@ -11,6 +11,9 @@ s3cmd = "*"
 py_w3c = "*"
 pygments = "*"
 pygments-solarized = "*"
+python-magic = "*"
+webassets = "*"
+webassets-libsass = "*"
 
 [requires]
 python_version = "3.6"

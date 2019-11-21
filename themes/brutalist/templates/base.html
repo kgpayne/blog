@@ -43,7 +43,10 @@
         <!-- moment.js for date formatting -->
         <script src="{{ SITEURL }}/theme/js/moment.js"></script>
         <!-- css -->
-        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/main.css" />
+        {% assets filters="libsass", output="css/main.css", "css/sass/main.sass" %}
+        <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+        <!-- <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/main.css" /> -->
+        {% endassets %}
 		<script>
 
                 /*! grunt-grunticon Stylesheet Loader - v2.1.2 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */

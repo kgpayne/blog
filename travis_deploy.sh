@@ -1,8 +1,9 @@
 deployprod() {
   make html
-  s3cmd sync output/ s3://blog.kenpayne.co.uk -c .s3cfg --acl-public --delete-removed
-  s3cmd --recursive modify --add-header='content-type':'text/css' \
-      --exclude '' --include '.css' s3://blog.kenpayne.co.uk -c .s3cfg
+  s3cmd rm --recursive --force s3://blog.kenpayne.co.uk/ -c .s3cfg
+  s3cmd put --recursive output/ s3://blog.kenpayne.co.uk -c .s3cfg \
+    --acl-public \
+    --add-header='Cache-Control:max-age=300'
 }
 
 if [[ $TRAVIS_PULL_REQUEST != 'false' ]]; then
