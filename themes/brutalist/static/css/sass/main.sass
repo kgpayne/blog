@@ -7,7 +7,7 @@
  */
 
 /* MIXINS */
-@import pygment.sass
+/* @import pygment.sass */
 @import mixins.sass
 @import reset.sass
 /* END MIXINS */
@@ -19,7 +19,7 @@ $color-third: #E1ECF4
 $color-gray: #abb4b9
 $fonts: 'Lato', sans-serif
 /* END VARIABLES */
- 
+
 /* FONTS */
 body
   font-family: 'Lato', sans-serif
@@ -71,7 +71,7 @@ div#masthead
 
   nav#menu
     clear: both
-    -webkit-transition: all 0.3s ease-out  
+    -webkit-transition: all 0.3s ease-out
     -moz-transition: all 0.3s ease-out
     -ms-transition: all 0.3s ease-out
     -o-transition: all 0.3s ease-out
@@ -81,11 +81,11 @@ div#masthead
     @include breakpoint(medium)
       max-height: none
       padding-top: 15%
-      li 
+      li
         display: block
         font-weight: 400
         font-size: 1.2em
-    
+
     &#menu.active
       max-height: 15em
       padding: 2em 0
@@ -104,7 +104,7 @@ div#masthead
       border-bottom: 1px solid #808080
       @include breakpoint(medium)
         border: 0
-  
+
   a#menu-link
     float: right
     display: block
@@ -118,7 +118,7 @@ div#masthead
 /* FOOTER */
 footer
   margin-bottom: 2em
-  margin-top: 2em 
+  margin-top: 2em
   p
     color: $color-gray
 /* END FOOTER STYLES */
@@ -130,7 +130,7 @@ footer
   ol li
     padding-bottom: 4em
     padding-top: 1em
-  @include breakpoint(medium) 
+  @include breakpoint(medium)
     padding: 2em
     padding-top: 4.25em
   article
@@ -165,7 +165,7 @@ footer
 /* END ARTICLES */
 
 /* ARTICLE */
-.article 
+.article
   img
     max-width: 100%
     @include center-block
@@ -181,7 +181,7 @@ footer
       margin-bottom: 0
       margin-top: 0
       p
-        text-align: center 
+        text-align: center
     /*Article Header */
     header
       .project-header-logo
@@ -204,7 +204,7 @@ footer
         font-size: 1.4em
         padding-bottom: .75em
         padding-top: 1.5em
-        font-weight: 900        
+        font-weight: 900
       h3
         font-size: 1.2em
         padding-bottom: .75em
@@ -236,7 +236,7 @@ footer
         padding-bottom: 1.75em
         padding-top: 1em
         display: block
-        background-color: #f5f5f5
+        /* background-color: #f5f5f5 */
         border: 1px solid rgba(0, 0, 0, 0.15)
         border-radius: .25em
         padding: .5em
@@ -323,7 +323,7 @@ footer
   width: 2em
   height: 2em
   display: inline-block
-  padding: 0 .5em 
+  padding: 0 .5em
 
 .icons
   margin: 2em auto

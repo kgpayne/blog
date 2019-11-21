@@ -9,6 +9,8 @@ verify_ssl = true
 pelican = {extras = ["markdown"],version = "*"}
 s3cmd = "*"
 py_w3c = "*"
+pygments = "*"
+pygments-solarized = "*"
 
 [requires]
 python_version = "3.6"
