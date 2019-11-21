@@ -23,13 +23,13 @@
 <meta name="twitter:image" content="{{ SITEURL }}/images/{{ LOGO }}">
 {% endif %}
 <meta name="twitter:site" content="{{ TWITTER_USERNAME }}">
-<meta name="twitter:title" content="{{ article.title }}">
+<meta name="twitter:title" content="{{ article.title | e }}">
 <meta name="twitter:description" content="{{ article.description }}">
 {% endblock twittercard %}
 <!-- OG Tags -->
 {% block ogtags %}
 <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}"/>
-<meta property="og:title" content="{{ SITENAME }} | {{ article.title }}" />
+<meta property="og:title" content="{{ SITENAME }} | {{ article.title | e }}" />
 <meta property="og:description" content="{{ article.description }}" />
 {% if article.cover_image %}
 <meta property="og:image" content="{{ SITEURL }}/images/{{ article.cover_image }}" />
@@ -51,7 +51,7 @@
       {% endif %}
         <header>
           <h2>
-            {{ article.title }}
+            {{ article.title | safe }}
           </h2>
         </header>
       <div class="content">

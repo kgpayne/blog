@@ -57,6 +57,8 @@ SITEDESCRIPTION = 'A simple, accessible, content-first Pelican theme inspired by
 # FAVICON = ''
 ## path to logo for nav menu (optional)
 LOGO = 'kp_portrait.jpg'
+## nav menu blurb (optional - supports html syntax)
+BLURB = 'Data Engineer<br>Solutions Architect<br>Pythonista 🐍'
 ## first name for nav menu if logo isn't provided
 FIRST_NAME = 'Ken'
 ## google analytics (fake code commented out)
@@ -94,6 +96,15 @@ MENUITEMS = [
 ## See https://mamcmanus.com to see what it looks like with a Gravatar
 # GRAVATAR = 'https://www.gravatar.com/avatar/a5544bcae63c5d56c0b7a3fa0ab5b295?s=256'
 
+# for highlighting code-segments
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'noclasses': True, 'pygments_style': 'monokai'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html5',
+}
 
 # PLUGINS
 PLUGIN_PATHS = ['plugins']
