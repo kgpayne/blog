@@ -37,6 +37,8 @@ body
     padding-left: 20%
   @include breakpoint(full)
     padding-left: 0
+
+
 /* END MAIN CONTENT CONTAINER
 
 /* LINKS */
@@ -256,6 +258,24 @@ footer
         margin-top: 1em
         margin-bottom: 2em
 
+      blockquote
+        page-break-inside: avoid
+        margin: 15px 0
+        border-left: 4px solid $color-gray
+        padding: 0 15px
+
+        &:first-child
+          margin-top: 0
+
+        &:last-child
+          margin-bottom: 0
+
+        p
+          padding-bottom: 0
+
+        footer
+          float: right
+
 .back-to-top
   padding-top: 2em
   text-align: center
@@ -347,5 +367,9 @@ img.emoji
 /* BLURB */
 .blurb
   padding: .75em .5em .75em 1em
+
+  a:link, a:visited, a:hover, a:active
+    text-decoration: none
+    color: $color-primary
 
 /* END BLURB */

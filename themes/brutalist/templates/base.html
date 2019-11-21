@@ -81,17 +81,19 @@
             <a href="/"><img src="{{ GRAVATAR }}" alt="Ken Payne Avatar" class="gravatar"></a>
             {% elif BLURB %}
             <div class="blurb">
-                {% if LOGO %}
-                    <a href="/"><img src="{{ SITEURL }}/images/{{ LOGO }}" alt="Ken Payne Logo"></a><br>
-                {% endif %}
-                {{ BLURB | safe }}
+                <a href="/">
+                    {% if LOGO %}
+                        <img src="{{ SITEURL }}/images/{{ LOGO }}" alt="Ken Payne Logo"><br>
+                    {% endif %}
+                    {{ BLURB | safe }}
+                </a>
             </div>
             {% elif LOGO %}
             <a href="/"><img src="{{ SITEURL }}/images/{{ LOGO }}" alt="Ken Payne Logo"></a>
             {% else %}
             <h1><a href="/">{{ FIRST_NAME }}'s Blog</a></h1>
             {% endif %}
-            <a href="#menu" id="menu-link">more stuff</a>
+            <a href="#menu" id="menu-link">menu</a>
             <nav id="menu">
                 <ul>
                     {% if DISPLAY_PAGES_ON_MENU %}
