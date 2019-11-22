@@ -10,7 +10,7 @@ save_as: index.html
 
 
 <br>
-Here I collect articles, book notes, technical
-tutorials/work-books and other information that might be useful to my future self.
+Here I collect articles, take book notes, build technical
+tutorials and generally assemble information that might be <important>useful to my future self</important>.
 Whilst the intention of this blog is as a personal knowledge store and a form of
-"therapy through writing", I hope others might also find information here of interest and use.
+<important>therapy through writing</important>, I hope others might also find information here of interest and use.

@@ -8,10 +8,10 @@ SITEURL = ''
 
 # Categories
 USE_FOLDER_AS_CATEGORY = True
-DISPLAY_CATEGORIES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = False
 
 # Pages
-DISPLAY_PAGES_ON_MENU = True
+DISPLAY_PAGES_ON_MENU = False
 
 PATH = 'content'
 STATIC_PATHS = ['images']
@@ -48,7 +48,6 @@ PAGINATION_PATTERNS = (
 # Theme Settings
 THEME = 'themes/brutalist'
 INDEX_SAVE_AS = 'blog_index.html'
-DISPLAY_PAGES_ON_MENU = False
 ## used for OG tags and Twitter Card data on index page
 SITEIMAGE = 'kp_portrait.jpg'
 ## used for OG tags and Twitter Card data of index page
@@ -72,8 +71,10 @@ FIRST_NAME = 'Ken'
 ## Other links can be added following the same tuple pattern
 MENUITEMS = [
     ('home', '/'),
-    ('blog', '/blog_index'),
+    ('all posts', '/blog_index'),
     ('about', '/pages/about.html'),
+    ('', ''),
+    ('categories', '/categories'),
     ('tags', '/tags.html')
 ]
 ## Social icons for footer
