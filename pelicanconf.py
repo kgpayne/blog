@@ -71,11 +71,12 @@ FIRST_NAME = 'Ken'
 ## Other links can be added following the same tuple pattern
 MENUITEMS = [
     ('home', '/'),
-    ('all posts', '/blog_index'),
-    ('about', '/pages/about.html'),
     ('', ''),
+    ('all posts', '/blog_index'),
     ('categories', '/categories'),
-    ('tags', '/tags.html')
+    ('tags', '/tags.html'),
+    ('', ''),
+    ('about', '/pages/about.html')
 ]
 ## Social icons for footer
 ## Set these to whatever your unique public URL is for that platform
