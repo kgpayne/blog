@@ -9,8 +9,10 @@ save_as: index.html
 </footer>
 
 
-<br>
+<br><br>
 Here I collect articles, take book notes, build technical
 tutorials and generally assemble information that might be <important>useful to my future self</important>.
 Whilst the intention of this blog is as a personal knowledge store and a form of
 <important>therapy through writing</important>, I hope others might also find information here of interest and use.
+
+<center>**"Carpe Decennium"** - Seize the decade. (1/1/20)</center>

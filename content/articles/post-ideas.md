@@ -52,10 +52,11 @@ University of Life
 
 KPI: 1 book per month avg.<br>
 Book Lineup:
-- Teaming [Jan]
-- CDO’s Playbook [Jan]
-- Why We sleep [Feb]
-- Abundance Without Affluence [March]
-- 4 Disciplines of Execution [April]
-- Lean Analytics [May]
-- Team of Teams [June]
+
+  - [Jan] Teaming
+  - [Jan] CDO’s Playbook
+  - [Feb] Why We sleep
+  - [March] Abundance Without Affluence
+  - [April] 4 Disciplines of Execution
+  - [May] Lean Analytics
+  - [June] Team of Teams
