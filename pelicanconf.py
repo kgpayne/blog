@@ -73,7 +73,7 @@ MENUITEMS = [
     ('home', '/'),
     ('', ''),
     ('all posts', '/blog_index'),
-    ('categories', '/categories'),
+    ('categories', '/categories.html'),
     ('tags', '/tags.html'),
     ('', ''),
     ('about', '/pages/about.html')
