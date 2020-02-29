@@ -1,6 +1,6 @@
 title: The University of Life
 date: 2020-01-27
-description: Growing up, working in the Big City (London) and figuring out a career is hard. The University of Life chronicles my attempts at the above and 'recommendations to my younger self'.
+description: Growing up, working in the Big City (London) and figuring out a career is hard. The University of Life series chronicles my attempts at the above and 'recommendations to my younger self'.
 category: university-of-life
 tags: university-of-life
 
