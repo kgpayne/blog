@@ -1,7 +1,7 @@
 deployprod() {
   make html
   s3cmd rm --recursive --force s3://blog.kenpayne.co.uk/ -c .s3cfg
-  s3cmd put --recursive output/ s3://blog.kenpayne.co.uk -c .s3cfg \
+  s3cmd put --recursive _build/ s3://blog.kenpayne.co.uk -c .s3cfg \
     --acl-public \
     --guess-mime-type \
     --no-mime-magic \

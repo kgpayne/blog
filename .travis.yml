@@ -12,9 +12,8 @@ before_install:
 - sudo apt-get install -y libmagic-dev libjpeg-progs gifsicle optipng
 
 install:
-- pip install pipenv
-- pipenv install --system --deploy
-- npm install -g svgo
+- pip install poetry
+- poetry install
 
 script:
 - "echo Deploying \U0001F680"
