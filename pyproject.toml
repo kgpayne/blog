@@ -10,6 +10,7 @@ python = "^3.8"
 Sphinx = "^4.5.0"
 myst-parser = "^0.17.2"
 ablog = "^0.10.25"
+furo = "^2022.4.7"
 
 [tool.poetry.dev-dependencies]
 
