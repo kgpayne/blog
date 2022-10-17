@@ -1,3 +1,3 @@
 
 html:
-	poetry run sphinx-build -b html . _build/
+	poetry run sphinx-build -b html . _build/html

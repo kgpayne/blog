@@ -1,4 +1,4 @@
-# Life Docs
+# Life. Documented.
 
 ```{toctree}
 ---
@@ -7,6 +7,7 @@ maxdepth: 2
 ---
 
 blog/index
+stoves/index
 ```
 
 ## Indices and tables
