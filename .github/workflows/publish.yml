@@ -27,6 +27,6 @@ jobs:
       - name: Copy to S3
         run: |
           s3cmd rm --recursive --force s3://blog.kenpayne.co.uk/
-          s3cmd put --recursive _build/ s3://blog.kenpayne.co.uk/ --acl-public --guess-mime-type --no-mime-magic --add-header='Cache-Control:max-age=300'
-          s3cmd sync s3://static.kenpayne.co.uk/ s3://blog.kenpayne.co.uk/_static/ --acl-public --guess-mime-type --no-mime-magic --add-header='Cache-Control:max-age=300'
+          s3cmd put --recursive _build/html s3://blog.kenpayne.co.uk/ --acl-public --guess-mime-type --no-mime-magic --add-header='Cache-Control:max-age=0'
+          s3cmd sync s3://static.kenpayne.co.uk/ s3://blog.kenpayne.co.uk/_static/ --acl-public --guess-mime-type --no-mime-magic --add-header='Cache-Control:max-age=0'
       - run: echo "Done 🚀"
