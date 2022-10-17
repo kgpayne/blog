@@ -14,7 +14,6 @@ TODO:
 
 - Find a spare burner.
     - ~~Will the earlier No.2 roarer work?~~ Nope. It is regulated, but by a fuel-line valve near the tank. There is no space for one in the No. 6 configuration.
-    - 
 - Request "Army Equiptment Support Publication" via the [Ministry of Defence Publication Scheme](https://www.gov.uk/government/organisations/ministry-of-defence/about/publication-scheme) (probably end up routing to [Defence Equiptment and Support](https://www.gov.uk/government/organisations/defence-equipment-and-support)).
 
 ## Links
