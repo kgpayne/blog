@@ -11,6 +11,8 @@ Sphinx = "^4.5.0"
 myst-parser = "^0.17.2"
 ablog = "^0.10.25"
 sphinx-book-theme = "^0.3.3"
+sphinx_design = "^0.3.0"
+sphinxcontrib-images = "^0.9.4"
 
 [tool.poetry.dev-dependencies]
 

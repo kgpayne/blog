@@ -27,8 +27,8 @@ author = "Ken Payne"
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ["myst_parser"]
-myst_enable_extensions = ["strikethrough",]
+extensions = ["myst_parser", "sphinx_design", "sphinxcontrib.images"]
+myst_enable_extensions = ["strikethrough"]
 suppress_warnings = ["myst.strikethrough"]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -58,3 +58,8 @@ html_theme_options = {
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
+
+# Images
+images_config = {
+    "override_image_directive": True
+}
