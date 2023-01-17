@@ -60,6 +60,7 @@ html_theme_options = {
 html_static_path = ["_static"]
 
 # Images
-images_config = {
-    "override_image_directive": True
-}
+images_config = {"override_image_directive": True}
+
+# MyST
+myst_heading_anchors = 3
