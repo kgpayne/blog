@@ -3,14 +3,13 @@
 ## Build
 
 ```bash
-make html
+make build
 ```
 
 ## Serve Locally
 
 ```bash
-cd _build/
-python -m http.server 8000
+make serve
 ```
 
-Checkout http://localhost:8000
+Go to http://localhost:8000

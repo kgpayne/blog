@@ -1,0 +1,57 @@
+site_name: Life. Documented.
+repo_url: https://github.com/kgpayne/blog
+theme:
+  name: material
+  features:
+    - navigation.indexes
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.tabs
+    - navigation.tabs.sticky
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: white
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+plugins:
+  - glightbox:
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      touchNavigation: true
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - Blog:
+    - blog/index.md
+    - 2023:
+      - blog/posts/2023-01-17.md
+      - blog/posts/2023-02-15.md
+  - Stoves:
+    - stoves/index.md
+    - stoves/articles/british-military-no-6/index.md
+    - stoves/articles/optimus-111/index.md

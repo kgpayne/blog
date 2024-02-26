@@ -1,7 +1,7 @@
 .vscode
 
-# sphinx build folder
-_build
+# mkdocs build folder
+site/
 
 # Compiled source #
 ###################

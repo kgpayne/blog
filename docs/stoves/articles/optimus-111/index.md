@@ -3,7 +3,7 @@
 ```yaml
 date_aquired: 07/08/2022
 date_manufactured: TBD
-manufactured_by:  Optimus, Sweden
+manufactured_by: Optimus, Sweden
 fuel_type: Paraffin (Kerosene) & Petrol (Gasoline)
 ```
 
@@ -23,82 +23,24 @@ All in all, I am very happy with how this stove has turned out and look forward 
 
 ## Refurbished Condition
 
-```{thumbnail} /_images/stoves/optimus_111/refurbished/optimus_2.jpeg
-:group: refurbished
-```
+<div class="grid cards" markdown>
 
-``````{dropdown} All Photos
+- ![](img/refurbished/optimus-1.jpeg)
+- ![](img/refurbished/optimus-2.jpeg)
+<!-- - ![](img/refurbished/optimus-3.jpeg) -->
+- ![](img/refurbished/optimus-4.jpeg)
+- ![](img/refurbished/optimus-5.jpeg)
 
-`````{grid} 1 2 2 4
-:gutter: 1
-
-````{grid-item}
-
-```{thumbnail} /_images/stoves/optimus_111/refurbished/optimus_1.jpeg
-:group: refurbished
-```
-````
-
-````{grid-item}
-
-```{thumbnail} /_images/stoves/optimus_111/refurbished/optimus_3.jpeg
-:group: refurbished
-```
-````
-
-````{grid-item}
-
-```{thumbnail} /_images/stoves/optimus_111/refurbished/optimus_4.jpeg
-:group: refurbished
-```
-````
-
-````{grid-item}
-
-```{thumbnail} /_images/stoves/optimus_111/refurbished/optimus_5.jpeg
-:group: refurbished
-```
-````
-
-``````
+</div>
 
 ## Purchased Condition
 
-```{thumbnail} /_images/stoves/optimus_111/purchased/optimus_1.jpeg
-:group: purchased
-```
+<div class="grid cards" markdown>
 
-``````{dropdown} All Photos
+- ![](img/purchased/optimus-1.jpeg)
+- ![](img/purchased/optimus-2.jpeg)
+<!-- - ![](img/purchased/optimus-3.jpeg) -->
+- ![](img/purchased/optimus-4.jpeg)
+- ![](img/purchased/optimus-5.jpeg)
 
-`````{grid} 1 2 2 4
-:gutter: 1
-
-````{grid-item}
-
-```{thumbnail} /_images/stoves/optimus_111/purchased/optimus_3.jpeg
-:group: purchased
-```
-````
-
-````{grid-item}
-
-```{thumbnail} /_images/stoves/optimus_111/purchased/optimus_4.jpeg
-:group: purchased
-```
-````
-
-````{grid-item}
-
-```{thumbnail} /_images/stoves/optimus_111/purchased/optimus_5.jpeg
-:group: purchased
-```
-````
-
-````{grid-item}
-
-```{thumbnail} /_images/stoves/optimus_111/purchased/optimus_2.jpeg
-:group: purchased
-```
-````
-
-``````
+</div>
