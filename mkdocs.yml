@@ -4,6 +4,31 @@ theme:
   features:
     - navigation.indexes
     - navigation.instant
+    - navigation.expand
+    - navigation.sections
+    - navigation.path
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: white
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
 plugins:
   - blog:
       # blog_toc: true
@@ -27,5 +52,5 @@ nav:
     - blog/posts/2023-02-15.md
   - Stoves:
     - stoves/index.md
-    - stoves/articles/british-military-no-6.md
+    - stoves/articles/british-military-no-6/index.md
     - stoves/articles/optimus-111/index.md
