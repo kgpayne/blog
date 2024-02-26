@@ -12,10 +12,15 @@ jobs:
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v3
+      - name: Set up python
+        id: setup-python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
       - name: Install Poetry
         uses: snok/install-poetry@v1
       - name: Install Dependencies
-        run: poetry install
+        run: poetry install --no-interaction
       - run: make html
       - name: Set up S3cmd cli tool
         uses: s3-actions/s3cmd@v1.2.0
