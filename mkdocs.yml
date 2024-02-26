@@ -8,8 +8,23 @@ plugins:
   - blog:
       # blog_toc: true
       pagination_per_page: 1
+  - glightbox:
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+markdown_extensions:
+  - attr_list
+  - md_in_html
 
 nav:
   - Home: index.md
   - Blog:
     - blog/index.md
+    - blog/posts/2023-01-17.md
+    - blog/posts/2023-02-15.md
+  - Stoves:
+    - stoves/index.md
+    - stoves/articles/british-military-no-6.md
+    - stoves/articles/optimus-111/index.md
