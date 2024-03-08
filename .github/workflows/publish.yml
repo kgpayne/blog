@@ -21,7 +21,6 @@ jobs:
         uses: snok/install-poetry@v1
       - name: Install Dependencies
         run: poetry install --no-interaction
-      - run: make html
       - name: Set up S3cmd cli tool
         uses: s3-actions/s3cmd@v1.2.0
         with:
@@ -29,9 +28,12 @@ jobs:
           region: 'eu-central-1'
           access_key: ${{ secrets.S3_ACCESS_KEY }}
           secret_key: ${{ secrets.S3_SECRET_KEY }}
-      - name: Copy to S3
+      - name: Download Static Assets
+        run: s3cmd sync s3://static.kenpayne.co.uk/ docs/assets/
+      - name: Build Site
+        run: make html
+      - name: Publish Site
         run: |
           s3cmd rm --recursive --force s3://blog.kenpayne.co.uk/
           s3cmd put --recursive site/ s3://blog.kenpayne.co.uk/ --acl-public --guess-mime-type --no-mime-magic --add-header='Cache-Control:max-age=0'
-          s3cmd sync s3://static.kenpayne.co.uk/ s3://blog.kenpayne.co.uk/assets/ --acl-public --guess-mime-type --no-mime-magic --add-header='Cache-Control:max-age=0'
       - run: echo "Done 🚀"
