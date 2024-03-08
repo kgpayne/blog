@@ -13,6 +13,9 @@ mkdocs-material = "^9.5.10"
 mkdocs-glightbox = "^0.3.7"
 
 
+[tool.poetry.group.dev.dependencies]
+awscli = "^1.32.59"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

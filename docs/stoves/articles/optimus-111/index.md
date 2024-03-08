@@ -25,11 +25,11 @@ All in all, I am very happy with how this stove has turned out and look forward 
 
 <div class="grid cards" markdown>
 
-- ![](img/refurbished/optimus-1.jpeg)
-- ![](img/refurbished/optimus-2.jpeg)
-<!-- - ![](img/refurbished/optimus-3.jpeg) -->
-- ![](img/refurbished/optimus-4.jpeg)
-- ![](img/refurbished/optimus-5.jpeg)
+- ![](../../../assets/stoves/articles/optimus-111/refurbished/optimus-1.jpeg)
+- ![](../../../assets/stoves/articles/optimus-111/refurbished/optimus-2.jpeg)
+<!-- - ![](../../../assets/stoves/articles/optimus-111/refurbished/optimus-3.jpeg) -->
+- ![](../../../assets/stoves/articles/optimus-111/refurbished/optimus-4.jpeg)
+- ![](../../../assets/stoves/articles/optimus-111/refurbished/optimus-5.jpeg)
 
 </div>
 
@@ -37,10 +37,10 @@ All in all, I am very happy with how this stove has turned out and look forward 
 
 <div class="grid cards" markdown>
 
-- ![](img/purchased/optimus-1.jpeg)
-- ![](img/purchased/optimus-2.jpeg)
-<!-- - ![](img/purchased/optimus-3.jpeg) -->
-- ![](img/purchased/optimus-4.jpeg)
-- ![](img/purchased/optimus-5.jpeg)
+- ![](../../../assets/stoves/articles/optimus-111/purchased/optimus-1.jpeg)
+- ![](../../../assets/stoves/articles/optimus-111/purchased/optimus-2.jpeg)
+<!-- - ![](../../../assets/stoves/articles/optimus-111/purchased/optimus-3.jpeg) -->
+- ![](../../../assets/stoves/articles/optimus-111/purchased/optimus-4.jpeg)
+- ![](../../../assets/stoves/articles/optimus-111/purchased/optimus-5.jpeg)
 
 </div>

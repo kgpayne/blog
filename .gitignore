@@ -2,6 +2,7 @@
 
 # mkdocs build folder
 site/
+docs/assets/
 
 # Compiled source #
 ###################
