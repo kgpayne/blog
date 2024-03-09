@@ -4,12 +4,21 @@
 
     Me: "You mispelled obsession."
 
-<div class="grid cards" markdown>
+<div class="grid cards">
 
-![british-military-no-6](../assets/stoves/articles/british-military-no-6/temp.jpeg){width=300}<br>
-[British Military No. 6](articles/british-military-no-6/index.md)
-
-![optimus-111](../assets/stoves/articles/optimus-111/refurbished/optimus-1.jpeg){width=300}<br>
-[Optimus 111](articles/optimus-111/index.md)
+<ul>
+    <li>
+        <p>British Military No. 6</p>
+        <a href="articles/british-military-no-6/index.html">
+            <img src="../assets/stoves/articles/british-military-no-6/temp.jpeg" alt="British Military No. 6" style="width:300px;" class="glightbox-skip">
+        </a>
+    </li>
+    <li>
+        <p>Optimus 111</p>
+        <a href="articles/optimus-111/index.html">
+            <img src="../assets/stoves/articles/optimus-111/refurbished/optimus-1.jpeg" alt="Optimus 111" style="width:300x;" class="glightbox-skip">
+        </a>
+    </li>
+</ul>
 
 </div>

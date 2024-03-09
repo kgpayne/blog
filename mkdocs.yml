@@ -40,6 +40,8 @@ plugins:
       zoomable: true
       draggable: true
       touchNavigation: true
+      skip_classes:
+        - glightbox-skip
 markdown_extensions:
   - attr_list
   - md_in_html
